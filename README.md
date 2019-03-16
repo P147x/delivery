@@ -2,6 +2,8 @@
 Simple delivery tracker, working with the delivery services listed below.
 
 Super excited about getting a new package, but you can't stop thinking about ? You're looking for a simple tool to yell at you when your delivery guy is moving ? I think this might be a good solution for you.
+
+![travis](https://travis-ci.org/P147x/delivery-cli.svg?branch=master) ![goreportcards](https://goreportcard.com/badge/github.com/P147x/delivery-cli)
 ## Installation
 First things first. Get the necessary files before.
 ```

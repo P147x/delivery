@@ -1,6 +1,7 @@
 package services
 
 import (
+	"strings"
 	"time"
 
 	"github.com/gocolly/colly"
@@ -40,6 +41,7 @@ func (fb *Yanwen) Get() []Event {
 
 			} else if i%2 == 1 {
 				ev = elem.Text
+				ev = strings.TrimSpace(ev)
 				events = append(events, Event{timestamp: ts, event: ev})
 			}
 		})
@@ -54,7 +56,8 @@ func (fb *Yanwen) Update() bool {
 	data := fb.Get()
 	if len(fb.historic) == 0 && len(data) != 0 {
 		fb.historic = data
-	} else if len(fb.historic) != len(data) && len(data) != 0 {
+		return false
+	} else if len(fb.historic) != len(data) && len(data) != 0 && data[0].timestamp != fb.historic[0].timestamp {
 		fb.historic = data
 		return true
 	}

@@ -44,7 +44,7 @@ func onReady() {
 			}
 		}
 		update.SetTitle("Last check :" + time.Now().Format("2006-01-02 15:04:05"))
-		time.Sleep(60 * time.Second)
+		time.Sleep(120 * time.Second)
 	}
 }
 

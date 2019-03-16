@@ -11,7 +11,7 @@ export GOPATH
 
 BINARY_NAME=delivery
     
-all: test build
+all: deps test build
 
 build:
 	$(GOBUILD) -o $(BINARY_NAME) delivery 

@@ -6,3 +6,4 @@ addons:
   apt:
     packages:
     - libgtk-3-dev
+    - libappindicator3-dev

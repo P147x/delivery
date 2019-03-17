@@ -1,4 +1,4 @@
-# Delivery-CLI
+# Delivery
 A simple and cross-plateform delivery tracker, working with the delivery services listed below.
 
 Super excited about getting a new package, but you can't stop thinking about ? You're looking for a simple tool to yell at you when your delivery guy is moving ? I think this might be a good solution for you.
